@@ -9,7 +9,13 @@ type Props = {
   onPageChange: (pageNumber: number) => void
 }
 
-export const Pagination: React.FC<Props> = ({ items, isFirstPage, isLastPage, pageInfo, onPageChange }) => {
+export const Pagination: React.FC<Props> = ({
+  items,
+  isFirstPage,
+  isLastPage,
+  pageInfo,
+  onPageChange,
+}) => {
   return (
     <nav aria-label="Pagination">
       <ul className="uk-pagination uk-flex-center" uk-margin="true">

@@ -11,8 +11,8 @@ import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
 export default defineConfig([
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'], plugins: { js }, extends: ['js/recommended'] },
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'], languageOptions: { globals: globals.browser } },
+  { files: ['**/*.{js,ts,tsx}'], plugins: { js }, extends: ['js/recommended'] },
+  { files: ['**/*.{js,ts,tsx}'], languageOptions: { globals: globals.browser } },
   tseslint.configs.strict,
   pluginReact.configs.flat.recommended,
   jsxA11yPlugin.flatConfigs.recommended,

@@ -7,7 +7,13 @@ export const Page = () => {
   return (
     <>
       <p>page number: {items.currentPage}</p>
-      <Pagination items={items} isFirstPage={isFirstPage} isLastPage={isLastPage} pageInfo={pageInfo} onPageChange={onPageChange} />
-    </>)
-
+      <Pagination
+        items={items}
+        isFirstPage={isFirstPage}
+        isLastPage={isLastPage}
+        pageInfo={pageInfo}
+        onPageChange={onPageChange}
+      />
+    </>
+  )
 }

@@ -3,10 +3,10 @@ import { sampleItems, PAGE_SETTING } from './const'
 
 export type ItemType = (typeof sampleItems)[number]
 export type Paginator = {
-  firstPage: number,
-  pageNumbers: number[],
-  lastPage: number,
-  previousPage: number,
+  firstPage: number
+  pageNumbers: number[]
+  lastPage: number
+  previousPage: number
   nextPage: number
 }
 
